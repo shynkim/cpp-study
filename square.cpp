@@ -2,10 +2,10 @@
 using namespace std;
 
 class Box {
-private: // privateÀº Å¬·¡½º ³»ºÎ¿¡¼­¸¸ ¾µ ¼ö ÀÖ´Ù
-	int width; //°¡·Î±æÀÌ
-	int length; //¼¼·Î±æÀÌ
-	char lf; //¹®ÀÚ
+private: // privateì€ í´ë˜ìŠ¤ ë‚´ë¶€ì—ì„œë§Œ ì“¸ ìˆ˜ ìˆë‹¤
+	int width; //ê°€ë¡œê¸¸ì´
+	int length; //ì„¸ë¡œê¸¸ì´
+	char lf; //ë¬¸ì
 public:
 	void setSize(int w,int h) {
 		width = w; 
@@ -22,7 +22,7 @@ public:
 	}
 public:
 	void draw() {
-		for (int i = 0; i < length; i++) { //°¡·Î*¼¼·Î ¸¸Å­ Ãâ·Â
+		for (int i = 0; i < length; i++) { //ê°€ë¡œ*ì„¸ë¡œ ë§Œí¼ ì¶œë ¥
 			for (int j = 0; j < width; j++) {
 				cout << lf; 
 			}
@@ -35,12 +35,12 @@ public:
 int main(void) {
 
 	Box s1(10,2); 
-	s1.setSize(3,5); //»çÀÌÁî¸¦ º¯°æÇÑ´Ù
+	s1.setSize(3,4); //ì‚¬ì´ì¦ˆë¥¼ ë³€ê²½í•œë‹¤
 	s1.setFil('*');
 	s1.draw();
 
 	Box s2(8,2);
-	s2.setSize(6,10); //»çÀÌÁî¸¦ º¯°æÇÑ´Ù
+	s2.setSize(6,10); //ì‚¬ì´ì¦ˆë¥¼ ë³€ê²½í•œë‹¤
 	s2.setFil('^');
 	s2.draw();
 
